@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "FIryd1cEFTo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Or Levran\\CursorProjects\\VibeCoding_01\\Vibe-Coding-01\\ServiceA\\ServiceA.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Or Levran\\.nuget\\packages\\confluent.kafka\\2.4.0\\confluent.kafka.2.4.0.nupkg.sha512",
+    "C:\\Users\\Or Levran\\.nuget\\packages\\librdkafka.redist\\2.4.0\\librdkafka.redist.2.4.0.nupkg.sha512",
+    "C:\\Users\\Or Levran\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.3\\microsoft.aspnetcore.openapi.9.0.3.nupkg.sha512",
+    "C:\\Users\\Or Levran\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\Or Levran\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
