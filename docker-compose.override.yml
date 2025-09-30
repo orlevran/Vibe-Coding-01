@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  servicea:
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    ports:
+      - "5000:8080"
+
+  serviceb:
+    environment:
+      DOTNET_ENVIRONMENT: Development
+

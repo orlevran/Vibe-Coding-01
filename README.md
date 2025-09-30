@@ -14,18 +14,16 @@ This solution demonstrates two .NET microservices communicating indirectly via A
 
 ## Running Locally
 
-1. Start Kafka locally (topics `city-requests` and `city-responses` are created automatically on publish/consume).
-2. In one terminal, run ServiceB:
+### Using Docker Compose
+
+1. Ensure Docker Desktop is running.
+2. Build and start the stack (Kafka + services):
 
    ```bash
-   dotnet run --project ServiceB
+   docker compose up --build
    ```
 
-3. In another terminal, run ServiceA:
-
-   ```bash
-   dotnet run --project ServiceA
-   ```
+3. ServiceA is exposed on `https://localhost:5000` (self-signed cert) and `http://localhost:5000` (when using Compose override). ServiceB runs as a background worker.
 
 4. Request sister cities for a given city (example uses PowerShell):
 
@@ -50,6 +48,15 @@ This solution demonstrates two .NET microservices communicating indirectly via A
      "sisterCities": ["Washington D.C.", "Manila", "Beijing", "Hanoi", "Jakarta"]
    }
    ```
+
+### Running with the .NET CLI (manual Kafka)
+
+If you prefer running without Docker, start a local Kafka broker manually, then launch both services:
+
+```bash
+dotnet run --project ServiceB
+dotnet run --project ServiceA
+```
 
 ## Design Notes
 
